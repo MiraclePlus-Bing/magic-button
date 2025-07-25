@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>魔法按钮 - [你的名字]</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="magicBtn">点我变色！</button>
+  <p>当前颜色: <span id="colorValue">#FFFFFF</span></p>
+  <script src="script.js"></script>
+</body>
+</html>
