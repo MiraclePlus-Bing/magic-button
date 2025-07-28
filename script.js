@@ -10,8 +10,8 @@ button.addEventListener('click', () => {
   const b = Math.floor(Math.random() * 256);
   
   // 提示：使用以下格式设置按钮背景色 👇
-  // button.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+   button.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
   
   // 提示：使用以下格式显示颜色值 👇
-  // colorDisplay.textContent = `rgb(${r}, ${g}, ${b})`;
+   colorDisplay.textContent = `rgb(${r}, ${g}, ${b})`;
 });
