@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>魔法按钮 - [你的名字]</title>
+  <meta charset="UTF-8">
+  <title>魔法按钮修复版</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <button id="magicBtn">点我变色！</button>
   <p>当前颜色: <span id="colorValue">#FFFFFF</span></p>
-  <script src="script.js"></script>
+
+  <script>
+    // 确保DOM加载后执行
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('magicBtn');
+      const colorSpan = document.getElementById('colorValue');
+      
+      btn.addEventListener('click', () => {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        
+        const colorStr = `rgb(${r},${g},${b})`;
+        btn.style.backgroundColor = colorStr;
+        colorSpan.textContent = colorStr;
+      });
+      
+      // 初始随机色
+      btn.click(); 
+    });
+  </script>
 </body>
 </html>
